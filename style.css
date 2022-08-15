@@ -1,0 +1,109 @@
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(./assets/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #000000;
+}
+nav.navbar>div>img{
+    width: 120px;
+    margin: 30px 30px;
+}
+.line {
+    width: 0;
+    height: 40px;
+    border: 1px solid #ffffff;
+    position: absolute;
+    left: 265px;
+    top: 30px;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    justify-content: space-between;
+    list-style: none;
+}
+.list-item{
+    cursor: pointer;
+}
+.list-item:first-child::after{
+    content: "\2304";
+    font-size: 20px;
+    margin-left: 12px;
+    position: relative;
+    top:-4px;
+}
+.grow-list{
+    position: relative;
+    right: 138px;
+    margin-top: 30px;
+    line-height: 35px;
+}
+.button-small{
+    position: relative;
+    left: 12px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #ba0cc5;
+    cursor: pointer;
+}
+.hero{
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    left: 20%;
+    top:-20%;
+}
+
+.button-large{
+    width: 20vw;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #ba0cc5;
+    align-self: center;
+    cursor: pointer;
+}
+.hero-heading{
+    font-size: 70px;
+    align-self: center;
+}
+.hero-description{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
